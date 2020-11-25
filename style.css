@@ -1,11 +1,7 @@
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 2em;
-}
-
-h1 {
-  font-weight: normal;
-  color: pink;
+  background-color: #fff0e3;
 }
 
 button {
@@ -15,6 +11,18 @@ button {
   font-size: 24px;
   padding: 0.5em;
   border-radius: 6px;
+}
+
+#video_container {
+  position: relative;
+}
+
+.videos {
+  display: flex;
+}
+
+#video_container video {
+  max-width: 100%;
 }
 
 /* top border */
@@ -30,12 +38,75 @@ button {
   color: #fff;
 }
 
-#video-container {
-  position: relative;
+/* attempt bottom left corner */
+.bottomleftcute {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 130px;
+  height: 145px;
+  background: url(./cupcake.gif);
+  background-size: cover;
 }
 
+.bottomrightcute {
+  position: absolute;
+  bottom: 0px;
+  right: 8px;
+  width: 140px;
+  height: 130px;
+  background: url(./hk.webp);
+  background-size: cover;
+}
+
+.leftbow {
+  position: absolute;
+  top: 30%;
+  left: 8px;
+  width: 140px;
+  height: 130px;
+  background: url(./bow.png);
+  background-size: cover;
+}
+
+.rightwand {
+  position: absolute;
+  bottom: 25%;
+  right: 20px;
+  width: 170px;
+  height: 150px;
+  background: url(./wand.gif);
+  background-size: cover;
+}
+
+.hangingstar_right {
+  position: absolute;
+  top: 7%;
+  right: 30px;
+  width: 100px;
+  height: 130px;
+  background: url(./hangingstar.gif);
+  background-size: cover;
+}
+
+.hangingstar_left {
+  position: absolute;
+  top: 7%;
+  left: 30px;
+  width: 100px;
+  height: 130px;
+  background: url(./hangingstar.gif);
+  background-size: cover;
+}
+
+
+
+
+
+
+/* other css things i can use */
 /* bottom right corner */
-#video-container::before {
+/* #video_container::before {
   content: "";
   position: absolute;
   bottom: 8px;
@@ -44,40 +115,20 @@ button {
   height: 130px;
   background: url(./hk.webp);
   background-size: cover;
-}
+} */
 
-/* attempt bottom left corner */
-.bottomleftcute {
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  width: 130px;
-  height: 145px;
-  /* padding: 0.5em 0.5em 0.5em 2em; */
-  background: url(./cupcake.gif);
-  background-size: cover;
-}
-
-.videos {
-  display: flex;
-}
-
-#video-container video {
-  max-width: 100%;
-}
 
 /* need this so that the graphics dont show up on the homepage */
-#video-container::before,
+/* #video_container::before,
 .ribbon {
   opacity: 0;
   transition: opacity 0.5s;
-}
+} */
 
-#video-container.live::before,
+/* #video_container.live::before,
 .live .ribbon {
   opacity: 1;
-}
-
+} */
 
 /* triangle after the name for flag like look */
 /* .name::after {
