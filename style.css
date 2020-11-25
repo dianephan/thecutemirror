@@ -38,7 +38,6 @@ button {
   color: #fff;
 }
 
-/* attempt bottom left corner */
 .bottomleftcute {
   position: absolute;
   bottom: 0px;
@@ -98,47 +97,3 @@ button {
   background: url(./hangingstar.gif);
   background-size: cover;
 }
-
-
-
-
-
-
-/* other css things i can use */
-/* bottom right corner */
-/* #video_container::before {
-  content: "";
-  position: absolute;
-  bottom: 8px;
-  right: 8px;
-  width: 140px;
-  height: 130px;
-  background: url(./hk.webp);
-  background-size: cover;
-} */
-
-
-/* need this so that the graphics dont show up on the homepage */
-/* #video_container::before,
-.ribbon {
-  opacity: 0;
-  transition: opacity 0.5s;
-} */
-
-/* #video_container.live::before,
-.live .ribbon {
-  opacity: 1;
-} */
-
-/* triangle after the name for flag like look */
-/* .name::after {
-  content: "";
-  height: 0;
-  width: 0;
-  position: absolute;
-  top: 0;
-  right: -2em;
-  border: 1em solid rgba(242, 47, 70, 0.8);
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-} */
